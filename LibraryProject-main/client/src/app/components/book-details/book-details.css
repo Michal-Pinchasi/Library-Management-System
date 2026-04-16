@@ -1,0 +1,42 @@
+.details-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  border-top: 5px solid #3f51b5;
+}
+
+.details-card h2 {
+  color: #3f51b5;
+  margin-bottom: 20px;
+}
+
+.details-card p {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.details-card strong {
+  display: inline-block;
+  width: 100px;
+  color: #555;
+}
+.btn-secondary {
+  background-color: #6c757d; 
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}

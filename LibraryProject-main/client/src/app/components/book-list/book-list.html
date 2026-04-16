@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>ספריית הספרים שלי</h2>
+  <table class="table">
+    <thead>
+      <button class="btn btn-primary" [routerLink]="['/books/add']">הוסף ספר חדש</button>
+      <tr>
+        <th> כותרת</th>
+        <th>מחבר</th>
+        <th>תאור</th>
+        <th>סטטוס</th>
+        <th>קטגוריה</th>
+         <th>פעולות</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.Title}}</td>
+        <td>{{ book.AuthorName }}</td>
+        <td>{{ book.Description }}</td>
+        <td>{{ book.StatusName }}</td>
+        <td>{{ book.CategoryName }}</td>
+        <td>
+         <a class="btn btn-secondary" [routerLink]="['/book', book.Id]">פרטים</a>
+         <button class="btn btn-danger" [routerLink]="['/books/delete', book.Id]">מחיקה</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
